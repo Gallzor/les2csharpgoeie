@@ -12,7 +12,7 @@
             //writeline ook hier, vergeet de dollarsign niet($"");
 
             // Opdracht1();
-            Opdracht2();
+            Opdracht2IfElse();
         }
         // Opdracht 2 uit de Powerpoint (slide 17/28)
         static void Opdracht2()
@@ -23,6 +23,30 @@
             string tekstbestand = File.ReadAllText(path);
 
             Console.WriteLine(tekstbestand);
+        }
+
+        static void Opdracht2IfElse()
+        {
+
+            string path = "C:\\Users\\gally\\Documents\\SCHOOL\\CODING\\CSHARP\\ws1.txt";
+
+            if(string.IsNullOrWhiteSpace(path) || path.Length < 3)
+            {
+                string tekstbestand = File.ReadAllText(path);
+                Console.WriteLine(tekstbestand);
+            }
+
+            else if(!File.Exists(path))
+            {
+                string tekstbestand = File.ReadAllText(path);
+                Console.WriteLine(tekstbestand);
+            }
+
+            else
+            {
+                Console.WriteLine("Seems like the file or path has been taken to another castle..");
+            }
+
         }
 
         // Opdracht 1 uit de Powerpoint (slide 14/28)
