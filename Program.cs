@@ -11,10 +11,16 @@
             //hier maak je de = new var();
             //writeline ook hier, vergeet de dollarsign niet($"");
 
-            Opdracht1();
+            // Opdracht1();
+            Opdracht2();
+        }
+        // Opdracht 2 uit de Powerpoint (slide 17/28)
+        static void Opdracht2()
+        {
+            File.ReadAllText("C:\\Users\\gally\\Documents\\SCHOOL\\CODING\\CSHARP\\ws1.txt");
         }
 
-       // Opdracht 1 uit de Powerpoint (slide 14/28)
+        // Opdracht 1 uit de Powerpoint (slide 14/28)
         static void Opdracht1()
         {
             Console.WriteLine("Hello C#sharp lesson!");
