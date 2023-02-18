@@ -1,5 +1,7 @@
-﻿using System.Globalization;
+﻿using System.Data.Common;
+using System.Globalization;
 using System.Security.Cryptography;
+using System.Xml.Linq;
 
 namespace Les2
 {
@@ -26,22 +28,24 @@ namespace Les2
         {
 
             string path = "C:\\Users\\gally\\Documents\\SCHOOL\\CODING\\CSHARP\\ws1.csv";
+            string[] rows = File.ReadAllLines(path);
 
-            string[] vakread = File.ReadAllLines(path);
-            string[] vaksplit = path.Split('\n');
-            string[] vakken = new string[vakread.Length + vaksplit.Length];
-
-            //Console.WriteLine(excelbestand);
-
-            foreach (string vak in vakken)
+            foreach (string row in rows)
             {
-                Console.WriteLine({vak});
+                string[] columns = row.Split(',');
+
+                foreach (string column in columns)
+                {
+                    Console.Write(column + "\t");
+                }
+
+                Console.WriteLine();
             }
+
         }
 
-
-        // Opdracht 2 uit de Powerpoint (slide 17/28)
-        static void Opdracht2()
+            // Opdracht 2 uit de Powerpoint (slide 17/28)
+            static void Opdracht2()
         {
 
             string path = "C:\\Users\\gally\\Documents\\SCHOOL\\CODING\\CSHARP\\ws1.txt";
