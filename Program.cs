@@ -17,7 +17,12 @@
         // Opdracht 2 uit de Powerpoint (slide 17/28)
         static void Opdracht2()
         {
-            File.ReadAllText("C:\\Users\\gally\\Documents\\SCHOOL\\CODING\\CSHARP\\ws1.txt");
+
+            string path = "C:\\Users\\gally\\Documents\\SCHOOL\\CODING\\CSHARP\\ws1.txt";
+
+            string tekstbestand = File.ReadAllText(path);
+
+            Console.WriteLine(tekstbestand);
         }
 
         // Opdracht 1 uit de Powerpoint (slide 14/28)
