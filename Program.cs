@@ -27,9 +27,16 @@ namespace Les2
 
             string path = "C:\\Users\\gally\\Documents\\SCHOOL\\CODING\\CSHARP\\ws1.csv";
 
-            string excelbestand = File.ReadAllText(path);
+            string[] vakread = File.ReadAllLines(path);
+            string[] vaksplit = path.Split('\n');
+            string[] vakken = new string[vakread.Length + vaksplit.Length];
 
-            Console.WriteLine(excelbestand);
+            //Console.WriteLine(excelbestand);
+
+            foreach (string vak in vakken)
+            {
+                Console.WriteLine();
+            }
         }
 
 
