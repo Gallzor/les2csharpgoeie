@@ -24,6 +24,7 @@ namespace Les2
         }
 
         // Opdracht 3 uit de Powerpoint (slide 26/28)
+        //Niet af, moet vragen hoe double precies gaat en het uitlijnen
         static void Opdracht3()
         {
 
@@ -32,11 +33,11 @@ namespace Les2
 
             foreach (string row in rows)
             {
-                string[] columns = row.Split(',');
+                string[] columns = row.Split(';');
 
                 foreach (string column in columns)
                 {
-                    Console.Write(column + "\t");
+                    Console.Write(column.Replace(',', '.') + "\t");
                 }
 
                 Console.WriteLine();
