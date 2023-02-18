@@ -35,7 +35,7 @@ namespace Les2
 
             foreach (string vak in vakken)
             {
-                Console.WriteLine();
+                Console.WriteLine({vak});
             }
         }
 
