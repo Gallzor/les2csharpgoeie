@@ -43,7 +43,8 @@ namespace Les2
 
         public void Print()
         {
-            Console.WriteLine($"De type fiets is een {Fietstype}. \n De kleur is {Fietskleur}. \n Heeft de fiets een bel: {Fietsbel}. \n De framehoogte is {Framehoogte}. \n");
+            Console.WriteLine($"De type fiets is een {Fietstype}. \n De kleur is {Fietskleur}. " +
+                $"\n Heeft de fiets een bel: {Fietsbel}. \n De framehoogte is {Framehoogte}. \n");
         }
     }
 }

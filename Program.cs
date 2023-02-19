@@ -28,19 +28,19 @@ namespace Les2
         //Opdracht 4 (Fiets) uit de workshop 2 powerpoint (slide13/27)
         static void Opdracht4()
         {
-            Fiets batavus = new Fiets { Fietstype = Fiets.FietsNaam.Batavus, Fietskleur = Fiets.Kleur.Blauw, Fietsbel = Fiets.Bel.Ja, Framehoogte = 13 };
-            Fiets gazelle = new Fiets { Fietstype = Fiets.FietsNaam.Gazelle, Fietskleur = Fiets.Kleur.Rood, Fietsbel = Fiets.Bel.Nee, Framehoogte = 89 };
-            Fiets sparta = new Fiets { Fietstype = Fiets.FietsNaam.Sparta, Fietskleur = Fiets.Kleur.Groen, Fietsbel = Fiets.Bel.Onbekend, Framehoogte = 69 };
+            Fiets fietsEen = new Fiets { Fietstype = Fiets.FietsNaam.Batavus, Fietskleur = Fiets.Kleur.Blauw, Fietsbel = Fiets.Bel.Ja, Framehoogte = 13 };
+            Fiets fietsTwee = new Fiets { Fietstype = Fiets.FietsNaam.Gazelle, Fietskleur = Fiets.Kleur.Rood, Fietsbel = Fiets.Bel.Nee, Framehoogte = 89 };
+            Fiets fietsDrie = new Fiets { Fietstype = Fiets.FietsNaam.Sparta, Fietskleur = Fiets.Kleur.Groen, Fietsbel = Fiets.Bel.Onbekend, Framehoogte = 69 };
 
-            batavus.Print();
-            gazelle.Print();
-            sparta.Print();
+            fietsEen.Print();
+            fietsTwee.Print();
+            fietsDrie.Print();
 
         }
 
 
-        // Opdracht 3 uit de Powerpoint (slide 26/28)
-        //Niet af, moet vragen hoe double precies gaat en het uitlijnen
+        // Opdracht 3 challenge uit de Powerpoint (slide 26/28)
+        //Het eerste gedeelte werkt maar niet af, moet vragen hoe double precies gaat en layout is lelijk
         static void Opdracht3()
         {
 
