@@ -20,8 +20,15 @@ namespace Les2
             //Opdracht2
             //Opdracht2IfElse();
             //Opdracht2Switch();
-            Opdracht3();
+            //Opdracht3();
+            Opdracht4();
         }
+
+        static void Opdracht4()
+        {
+
+        }
+
 
         // Opdracht 3 uit de Powerpoint (slide 26/28)
         //Niet af, moet vragen hoe double precies gaat en het uitlijnen
@@ -30,6 +37,7 @@ namespace Les2
 
             string path = "C:\\Users\\gally\\Documents\\SCHOOL\\CODING\\CSHARP\\ws1.csv";
             string[] rows = File.ReadAllLines(path);
+
 
             foreach (string row in rows)
             {
