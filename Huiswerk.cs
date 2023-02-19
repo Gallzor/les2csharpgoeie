@@ -11,5 +11,39 @@ namespace Les2
         //hier zijn de opdrachten alleen beschikbaar voor de class zelf.
     }
 
-    // zet hier de opdrachten/enum, hier kan de rest ook bij
+    public class Fiets
+    {
+        public enum Kleur 
+        { 
+            Blauw, 
+            Rood, 
+            Oranje,
+            Geel, 
+            Groen 
+        }
+        public enum Bel 
+        { 
+            Ja, 
+            Nee, 
+            Onbekend 
+        }
+
+        public enum FietsNaam
+        {
+            Gazelle,
+            Batavus,
+            Sparta
+        }
+
+        //autocreated methode:
+        public Kleur Fietskleur { get; set; }
+        public Bel Fietsbel { get; set; }
+        public FietsNaam Fietstype { get; set; }
+        public int Framehoogte { get; set; }
+
+        public void Print()
+        {
+            Console.WriteLine($"De type fiets is een {Fietstype}. \n De kleur is {Fietskleur}. \n Heeft de fiets een bel: {Fietsbel}. \n De framehoogte is {Framehoogte}. \n");
+        }
+    }
 }

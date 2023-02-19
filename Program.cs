@@ -22,10 +22,19 @@ namespace Les2
             //Opdracht2Switch();
             //Opdracht3();
             Opdracht4();
+
         }
 
+        //Opdracht 4 (Fiets) uit de workshop 2 powerpoint (slide13/27)
         static void Opdracht4()
         {
+            Fiets batavus = new Fiets { Fietstype = Fiets.FietsNaam.Batavus, Fietskleur = Fiets.Kleur.Blauw, Fietsbel = Fiets.Bel.Ja, Framehoogte = 13 };
+            Fiets gazelle = new Fiets { Fietstype = Fiets.FietsNaam.Gazelle, Fietskleur = Fiets.Kleur.Rood, Fietsbel = Fiets.Bel.Nee, Framehoogte = 89 };
+            Fiets sparta = new Fiets { Fietstype = Fiets.FietsNaam.Sparta, Fietskleur = Fiets.Kleur.Groen, Fietsbel = Fiets.Bel.Onbekend, Framehoogte = 69 };
+
+            batavus.Print();
+            gazelle.Print();
+            sparta.Print();
 
         }
 
